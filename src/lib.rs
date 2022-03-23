@@ -98,7 +98,7 @@ pub fn status() -> PyResult<bool> {
 }
 
 #[pymodule]
-fn sen_py(_py: Python<'_>, module: &PyModule) -> PyResult<()> {
+fn senpy_club(_py: Python<'_>, module: &PyModule) -> PyResult<()> {
   module.add("SENPY_CLUB_API_BASE_URL", SENPY_CLUB_API_BASE_URL)?;
   module.add(
     "SENPY_CLUB_API_CURRENT_VERSION",
